@@ -1,0 +1,38 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$error-red: rgb(243, 183, 183);
+
+//Vermittlung
+#vermittlung-header {
+    background-image: url(../assets/images/dogandhuman.jpg)
+}
+
+.form{
+    background-color: #f1f1f1;
+    border-radius: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 2%;
+    width: 95%;
+    @media(min-width: $lg) {
+        width: 50%;
+    }
+}
+
+.error {
+    background-color: $error-red;
+
+}
+
+.ok {
+    background-color: rgb(197, 238, 197);
+}
+
+.checkBoxError {
+    border: 3px solid $error-red;
+    border-radius: 3px;
+    padding-left: 5px;
+}

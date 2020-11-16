@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../style/vermittlung.css" rel="stylesheet">
+    <title>Tiervermittlung</title>
+    
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container my-nav ">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Unsere Tiere
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="../subpages/animals/hunde.html">Hunde</a>
+                              <a class="dropdown-item" href="../subpages/animals/katzen.html">Katzen</a>
+                              <a class="dropdown-item" href="../subpages/animals/voegel.html">Vögel</a>
+                          </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../subpages/team.html">Unser Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../subpages/vermittlung.html">Tiervermittlung</a>
+                    </li>
+                    </ul>
+                    <a href="../subpages/forms.html"><button class="btn btn-secondary" type="button">Intern</button>
+                    </a>
+                </div>
+            </div>
+            
+    </nav>
+  
+  
+    <div class="img-header" id="vermittlung-header">
+    </div>
+   
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h1>Tier Aufnahme </h1>
+            <p>Wir sind stets bereit und haben genügend Kapazitäten weitere Tiere bei uns aufzunehmen.
+               Haben Sie Haustiere, die sie nicht mehr behalten können, oder haben Sie ein einsames Tier auf der Straße gefunden, das Hilfe benötigt, 
+               dann rufen Sie uns einfach an, damit wir dem Tier helfen und eine neue Heimat geben können.
+            </p>
+
+            <a href="tel:00496114219388">
+                <button type="button" class="btn btn-primary">
+                    Jetzt anrufen
+                </button>
+            </a>
+            <br><br>
+            
+
+          </div>
+        
+          <div class="col-sm-12 col-md-6">
+            <h1>Tier Adoption </h1>
+            <p>Auch wenn es den Tieren bei uns sehr gut geht, müssen sie früher oder später das Heim verlassen, da immer wieder neue Tiere zu uns finden.
+               Wenn Sie mithelfen möchten und eines der Tiere als ihren Wegbegleiter wählen, nutzen Sie unser Formular unten, um einen Termin zu vereinbaren. 
+               Geben sie dafür einfach ihre Daten und ihr Wunschtier ein und warten auf unsere Rückmeldung.</p>
+          </div>
+        </div>
+      </div>
+
+<div class="container form">
+    <h4>Ihre Persönlichen Daten</h4>
+    <br>
+    <form autocomplete="off">
+        <div class="form-row">
+            <div class="form-group col-lg-6">
+                <label for="vname">Vorname* </label> <br>
+                <input type="text" id="vname" class="form-control" placeholder="Max" name="vname">
+            </div>
+            
+            
+            <div class="form-group col-lg-6">
+                <label for="nname">Nachname* </label> <br>
+                <input type="text" id="zname" class="form-control" placeholder="Mustermann" name="nname">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group col-lg-6">
+                <label for="nummer">Telefonnummer </label> <br>
+                <input type="tel" id="nummer" class="form-control" placeholder="01234 56789876" name="nummer">
+            </div>
+            <div class="form-group col-lg-6">
+                <label for="email">Email* </label> <br>
+                <input type="email" id="email" class="form-control" placeholder="max@mustermann.de" name="email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-lg-6">
+                <label>Geschlecht</label><br>
+                
+                <input type="radio" id="männl" name="geschlecht" value="männlich">
+                <label for="männl">männlich</label><br>
+
+                <input type="radio" id="weibl" name="geschlecht" value="weiblich">
+                <label for="weibl">weiblich</label><br>
+
+                <br>
+                <div id="alterDiv">
+                    <input type="checkbox" id="alter" name="alter">
+                    <label for="alter">Ich bin über 18*</label>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="form-row">
+            <div class="form-group col">
+                <label for="wtier">Ihr Wunschtier</label>
+                <select class="custom-select" id="wtier"> 
+                    <option value="egal" disabled selected>Ein Wunschtier auswählen</option>
+                    <optgroup label="Hund">Hund</optgroup>
+                        <option value="Thor">Thor</option>
+                        <option value="Captain America">Captain Amercia</option>
+                        <option value="Black Widow">Black Widow </option>
+                        <option value="Captain Marvel">Captain Marvel</option>
+                        <option value="Doctor Strange">Doctor Strange</option>
+                        <option value="Spider-Man">Spider-Man</option>
+                    <optgroup label="Katze">Katze</optgroup>
+                        <option value="Goose">Goose</option>
+                        <option value="Ant-Man">Ant-Man</option>
+                        <option value="Hawkeye">Hawkeye</option>
+                        <option value="Black Panther">Black Panther</option>
+                        <option value="Winter Soldier">Winter Soldier</option>
+                        <option value="Loki">Loki</option>
+                    <optgroup label="Vogel">Vogel</optgroup>
+                        <option value="Quicksilver">Quicksilver</option>
+                        <option value="Starlord">Starlord</option>
+                        <option value="Falcon">Falcon</option>
+                        <option value="Vision">Vision</option>
+                        <option value="Hulk">Hulk</option>
+                        <option value="Nick Fury">Nick Fury</option>
+                </select>
+            
+            </div>
+            
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-12">
+                <label for="comment">Kommentar (optional)</label>
+                <textarea class="form-control" id="comment"></textarea>    
+            </div>
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-primary" id="formSubmit">Senden</button>
+                <br><br>
+                <i>* erforderliche Felder</i>
+            </div>
+        </div>
+
+        <div class="alert alert-danger" id="formError" style="display: none">
+            Eingaben fehlerhaft.
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      </form>
+</div>
+   
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-4 footer-element">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1279.8524086819402!2d8.233262123691157!3d50.09181324786313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bdbe794f4ea8b1%3A0x6eb69f9672072e03!2sNerotal+16%2C+65193+Wiesbaden!5e0!3m2!1sde!2sde!4v1559333888242!5m2!1sde!2sde" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+            <div class="col-xs-12 col-sm-5 col-lg-4 footer-element">
+                
+                <h3>So finden Sie uns</h3>
+
+                <div class="align-top">
+                        <i class="material-icons">
+                            location_on
+                        </i> 
+                        Tierheim Wiesbaden<br>
+                        Nerotal 16<br>
+                        65193 Wiesbaden <br><br> 
+                </div>
+                
+                <h3>So erreichen Sie uns</h3>
+                <div class="align-center">
+                    <i class="material-icons">
+                        phone
+                    </i> 
+                    <a href="tel:0049123456789">
+                        01234 56789
+                    </a>
+                </div>
+                <div class="align-center">
+                    <i class="material-icons">
+                        mail
+                    </i> 
+                    <a href="mailto:info@wbn-tierheim.de">
+                        info@wbn-tierheim.de
+                    </a>
+                            
+                </div>  
+                
+            </div>
+
+            <div class="col-xs-12 col-sm-7 col-lg-4 footer-element">
+                    <h3>Unsere Öffnungszeiten</h3>
+                    <table>
+                        <tr>
+                            <th>
+                                Montag
+                            </th>
+                            <td>
+                                09:00 - 12:00
+                            </td>
+                            <td>
+                                14:00 - 18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Dienstag
+                            </th>
+                            <td>
+                                09:00 - 12:00
+                            </td>
+                            <td>
+                                14:00 - 18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Mittwoch
+                            </th>
+                            <td>
+                                09:00 - 12:00
+                            </td>
+                            <td>
+                                geschlossen
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Donnerstag
+                            </th>
+                            <td>
+                                09:00 - 12:00
+                            </td>
+                            <td>
+                                14:00 - 18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Freitag
+                            </th>
+                            <td>
+                                09:00 - 12:00
+                            </td>
+                            <td>
+                                14:00 - 18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Samstags
+                            </th>
+                            <td>
+                                09:00 - 12:00
+                            </td>
+                            <td>
+                                14:00 - 16:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Sonntags
+                            </th>
+                            <td>
+                                10:00 - 14:00
+                            </td>
+                            <td>
+                                geschlossen
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="subfooter">
+        <div class="container justify-content-center">
+            <span>&copy; Tierheim Wiesbaden 2019 </span> <span><a href="../subpages/impressum.html">Impressum</a> </span> <span><a href="../subpages/datenschutz.html">Datenschutz</a></span>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/anfrage.js"></script>
+    <script src="../js/submit.js"></script>
+</body>
+</html>

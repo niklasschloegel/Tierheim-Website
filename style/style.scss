@@ -1,0 +1,246 @@
+$primary-color: #66BB6A;
+$secondary-color: #037208;
+$third-color: rgb(3, 61, 5);
+$white-hover: rgb(230, 230, 230);
+$grey: rgb(165, 165, 165);
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+
+//Allgemein
+
+//for site headings
+h1{
+    padding: 3%;
+    padding-left: 0px;
+    font-size:1.7em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        text-decoration: none;
+        color: $white-hover;
+    }
+    &:active{
+        text-decoration: none;
+        color: $grey;
+    }
+}
+
+.img-header{
+    height: 30vh;
+    
+    @media (min-width: $md) {
+        height: 50vh;
+    }
+    @media (min-width: $lg) {
+        height: 70vh;
+    }
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    
+    &:hover{
+        background-color: $secondary-color !important;
+        border-color: $secondary-color !important;
+    }
+    &:focus, &.focus{
+        box-shadow: 0 0 0 0.2rem $third-color;
+    }
+  }
+
+.btn-secondary{
+    color: #fff;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+    
+    &:hover{
+        background-color: $third-color !important;
+        border-color: $third-color !important;
+    }
+    &:focus, &.focus{
+        box-shadow: 0 0 0 0.2rem $third-color;
+    }
+  }
+
+  
+  i{
+    font-size: 0.8em;
+  }
+
+
+
+
+//Navbar
+.bg-light{
+    background-color: $primary-color !important;
+}
+
+.nav-link {
+    color: white !important;
+    &:hover, &.active {
+        color: $white-hover !important;
+    }
+   
+}
+
+.my-nav{
+    padding-right: 10px;
+}
+
+.dropdown-item {
+    &:hover, &.active, &:active{
+        background-color: $primary-color !important;
+        color: white;
+    }
+}
+
+.logo {
+    height: 5vh;
+    width: auto;
+}
+
+
+
+
+
+// Site Content
+.profile-picture{
+    border-radius: 50%;
+    width: 90px;
+    height: auto;
+    float: left;
+}
+
+//for animal/people names
+h4{
+    font-size: 1.2em;
+}
+
+//animal/people subtitle: rasse, tätigkeit
+h5{
+    font-size: 1.1em;
+}
+
+//Impressum / Datenschutzerklärung
+.impressumDS{
+    height:100vh;
+}
+
+
+
+
+
+//Icons
+.iconText{
+    vertical-align: middle;
+}
+
+.align-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.align-top{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: top;
+    -ms-flex-align: top;
+    align-items: top;
+}
+
+.material-icons{
+    padding-right: 3px;
+}
+
+.icon{
+    vertical-align: middle;
+}
+
+.sort{
+    float: left;
+}   
+
+.filter{
+    float: left;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+//Footer
+.footer{
+    background-color: $secondary-color;
+    padding: 25px;
+    font-size: 0.8em;
+    color: white;
+}
+
+.footer-element{
+    margin-bottom: 4%;
+}
+
+td {
+  padding-left: 0.5em;  
+  padding-right: 0.5em;
+}
+
+//for footer
+h3{
+    font-size: 1.4em;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+
+    @media(min-width: $md) {
+        height: 120%;
+        padding-bottom: 5%;
+    }
+
+    @media(min-width: $lg) {
+        height: 100%;
+    }
+}
+
+.subfooter{
+    background-color: $third-color;
+    color: white;
+    padding: 0.5%;
+    
+    .container{
+        text-align: center;
+        span{
+            padding-right: 6px;
+            padding-left: 6px;
+        }
+        
+    }
+}
+
+
+
+
+
+
+

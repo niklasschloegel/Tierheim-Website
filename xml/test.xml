@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../style/xml.css"?>
+<!DOCTYPE anfrage[
+    <!ELEMENT anfrage (vorname, nachname, geschlecht?, telefon?, email, wunschtier?, comment?)>
+    <!ELEMENT vorname (#PCDATA)>
+    <!ELEMENT nachname (#PCDATA)>
+    <!ELEMENT geschlecht EMPTY>
+    <!ATTLIST geschlecht 
+        value (m|w) #REQUIRED>
+
+    <!ELEMENT telefon (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT wunschtier (#PCDATA)>
+    <!ELEMENT comment (#PCDATA)>
+]>
+
+
+<anfrage>
+    <vorname>Niklas</vorname>
+    <nachname>Zimmermann</nachname>
+    <geschlecht value="m"/>
+    <telefon>01702979293</telefon>
+    <email>niklastest@gmail.com</email>
+    <wunschtier>Ant-Man</wunschtier>
+    <comment>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</comment>
+</anfrage>

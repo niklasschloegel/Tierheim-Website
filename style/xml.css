@@ -1,0 +1,29 @@
+vorname{
+    display: inline;
+    font-weight: bold;
+}
+
+nachname{
+    display: inline;
+    font-weight: bold;
+}   
+
+geschlecht{
+    display: block;
+}
+
+telefon{
+    display: block;
+}
+
+email{
+    display: block;
+}   
+
+wunschtier{
+    display: block;
+}
+
+comment{
+    display: block;
+}

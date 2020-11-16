@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAA;EACT,gBAAgB,EAAE,gDAAgD;CACrE;;AAGD,AAAA,cAAc,CAAA;EACV,gBAAgB,EAAE,gDAAgD;CACrE;;AAID,AAAA,aAAa,CAAA;EACT,gBAAgB,EAAE,iDAAiD;CACtE",
+    "sources": [
+        "animals.scss"
+    ],
+    "names": [],
+    "file": "animals.css"
+}

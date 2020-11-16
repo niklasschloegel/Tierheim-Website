@@ -1,0 +1,24 @@
+table{
+    margin-top: 5vh;
+}
+
+#tableHolder{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 60vh;
+}
+
+.reihenfolge{
+    color: grey;
+
+    &:hover{
+        cursor: pointer;
+    }
+    &.rfActive{
+        color: black;
+    }
+}
+
+.sortfilter{
+    display: inline !important;
+}
